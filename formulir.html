@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICKY ARINTO</title>
+</head>
+<body>
+    <h1 style="background: #0b2447; color: rgb(255, 255, 255); padding: -5px; text-align: center;" style="text-align: center; margin-top: auto">Selamat Datang di Toko Material Kami!</h1>
+    <p style="text-align: center; margin-top: -20px"><u>Silahkan lengkapi data di bawah ini, untuk melanjutkan pembelian dan transaksi pada laman berikutnya!.</u></p>
+    <hr>
+    </p>
+    <form action="hasil.html" method="get">
+        <fieldset  style=" text-align: left; overflow: hidden;" >
+            <legend> <strong>Biodata</strong> </legend>
+            <div style="margin-right: 40px; float: left; width: 200px; height: 200px; border: 1px solid #000;">
+                <img style="width: 100%; height: 100%;">
+            </div>
+            <br>
+            <input type="file" id="image" name="image">
+            </div>
+            <p>
+                <label for="costumername">Nama:</label>
+                <input type="text" id="costumername" name="costumername" required>
+            </p>
+            <p>
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+            </p>
+            <p>
+                <label for="Telephone">Kontak:</label>
+                <input type="number" id="Telephone" name="Telephone" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="instruction">Deskripsi Pengguna:</label><br>
+                <textarea
+                id="instruction"
+                name="instruction" 
+                rows="4"
+                cols="50"
+                maxlength="400"
+                placeholder="Maksimal 150 karakter dalam satuan deksripsi."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend> <strong>Kualitas Material Terbaik Hanya Terdapat di Toko Kami!</strong></legend>
+            <p style="margin-top: 10px"> <strong>Jenis Material:</strong></p>
+            <p style="margin-top: -10px"> Tentukan jenis material terbaik yang sedang Anda butuhkan. </p>
+            <p style="margin-top: 10px"> <strong>1. Logam (Metals)</strong> :</p>
+            <p>
+                <input type="radio" id="Baja" name="Logam (Metals)" value="Baja" required>
+                <label for="Baja">Baja</label><br>
+                <input type="radio" id="Besi" name="Logam (Metals)" value="Besi" required>
+                <label for="Besi">Besi</label><br>
+                <input type="radio" id="Alumunium" name="Logam (Metals)" value="Alumunium" required>
+                <label for="Alumunium">Alumunium</label><br>
+                <input type="radio" id="Tembaga" name="Logam (Metals)" value="Tembaga" required>
+                <label for="Tembaga">Tembaga</label><br>
+            </p>
+            <p>
+                <label for="quantity Logam (Metals)">Quantity:</label>
+                <select id="quantity Logam (Metals)" name="quantity Logam (Metals)" required>
+                    <option value="">- Pilih -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9</option>
+                    <option value="5">10</option>
+                </select>
+            </p>
+            <p style="margin-top: 10px"> <strong>2. Keramik (Ceramics)</strong> :</p>
+            <p>
+                <input type="radio" id="Kaca" name="Keramik (Ceramics)" value="Kaca" required>
+                <label for="Kaca">Kaca</label><br>
+                <input type="radio" id="Porselen" name="Keramik (Ceramics)" value="Porselen" required>
+                <label for="Porselen">Porselen</label><br>
+                <input type="radio" id="Tanah Liat" name="Keramik (Ceramics)" value="Tanah Liat" required>
+                <label for="Tanah Liat">Tanah Liat</label><br>
+            </p>
+            <p>
+                <label for="quantity Keramik (Ceramics)">Quantity:</label>
+                <select id="quantity Keramik (Ceramics)" name="quantity Keramik (Ceramics)" required>
+                    <option value="">- Pilih -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9</option>
+                    <option value="5">10</option>
+                </select>
+            </p>
+            <p style="margin-top: 10px"> <strong>3. Polimer (Polymers)</strong> :</p>
+            <p>
+                <input type="radio" id="PVC" name="Polimer (Polymers)" value="PVC" required>
+                <label for="PVC">PVC</label><br>
+                <input type="radio" id="Plastik Industri" name="Polimer (Polymers)" value="Plastik Industri" required>
+                <label for="Plastik Industri">Plastik Industri</label><br>
+                <input type="radio" id="Karet" name="Polimer (Polymers)" value="Karet" required>
+                <label for="Karet">Karet</label><br>
+            </p>
+            <p>
+                <label for="quantity Polimer (Polymers)">Quantity:</label>
+                <select id="quantity Polimer (Polymers)" name="quantity Polimer (Polymers)" required>
+                    <option value="">- Pilih -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9</option>
+                    <option value="5">10</option>
+                </select>
+            </p>
+            <p style="margin-top: 10px"> <strong>4. Komposit (Composites)</strong> :</p>
+            <p>
+                <input type="radio" id="Beton" name="Komposit (Composites)" value="Beton" required>
+                <label for="Beton">Beton</label><br>
+                <input type="radio" id="Fiberglass" name="Komposit (Composites)" value="Fiberglass" required>
+                <label for="Fiberglass">Fiberglass</label><br>
+            </p>
+            <p>
+                <label for="quantity Komposit (Composites)">Quantity:</label>
+                <select id="quantity Komposit (Composites)" name="quantity Komposit (Composites)" required>
+                    <option value="">- Pilih -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="1">6</option>
+                    <option value="2">7</option>
+                    <option value="3">8</option>
+                    <option value="4">9</option>
+                    <option value="5">10</option>
+                </select>
+                <hr>
+            </p>
+            <p> Yuk, Tentukan Opsi Pengiriman dan Cara Pembayaran Anda Sekarang Juga!</p>
+            <p style="margin-top: 10px"> <strong>1. Opsi Jasa Pengiriman </strong> :</p>
+            <p>
+                <input type="radio" id="Reguler" name="Opsi Jasa Pengiriman" value="Reguler" required>
+                <label for="Reguler">Reguler</label><br>
+                <input type="radio" id="Instant" name="Opsi Jasa Pengiriman" value="Instant" required>
+                <label for="Instant">Instant</label><br>
+                <input type="radio" id="Kargo" name="Opsi Jasa Pengiriman" value="Kargo" required>
+                <label for="Kargo">Kargo</label><br>
+                <input type="radio" id="Ekonomi" name="Opsi Jasa Pengiriman" value="Ekonomi" required>
+                <label for="Ekonomi">Ekonomi</label><br>
+            </p>
+            <p style="margin-top: 10px"> <strong>2. Metode Pembayaran</strong> :</p>
+            <p>
+                <input type="radio" id="M-Banking" name="Metode Pembayaran" value="M-Banking" required>
+                <label for="M-Banking">M-Banking</label><br>
+                <input type="radio" id="Cash On Delivery" name="Metode Pembayaran" value="Cash On Delivery" required>
+                <label for="Cash On Delivery">Cash On Delivery (COD)</label><br>
+                <input type="radio" id="Kartu Kredit" name="Metode Pembayaran" value="Kartu Kredit" required>
+                <label for="Kartu Kredit">Kartu Kredit</label><br>
+                <input type="radio" id="QRIS" name="Metode Pembayaran" value="QRIS" required>
+                <label for="QRIS">QRIS</label><br>
+                <input type="radio" id="Cash Before Delivery" name="Metode Pembayaran" value="Cash Before Delivery" required>
+                <label for="Cash Before Delivery">Cash Before Delivery (CBD)</label><br>
+            </p>
+        </fieldset>   
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
+<footer style="text-align: center; padding: 5px; background-color: #0b2447; color: white;">
+    © 2026 - Nicky Arinto - NIM : 0110226049
+</footer>

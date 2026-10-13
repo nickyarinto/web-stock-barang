@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riwayat Transaksi</title>
+</head>
+<body style="width: 500px; margin-left: 455px;">
+    <h1 style="background: #0b2447; color: rgb(255, 255, 255); padding: -5px; text-align: center;" style="text-align: center; margin-top: auto">Riwayat Transaksi Anda</h1>
+    <p style="text-align: center; margin-top: -20px"><strong><u>Terima kasih telah berbelanja di toko Material kami!</u></strong>
+    </p>
+
+    <fieldset>
+        <legend><strong>Biodata Pembeli</strong></legend>
+        <div style="margin-right: 40px; float: left; width: 200px; height: 200px; border: 1px solid #000;">
+        <img id="foto" style="width: 100%; height: 100%;" src="bahan.jpeg" width="200" height="200">
+        </div>
+        <p>Nama: <span id="costumername"></span></p>
+        <p>Alamat: <span id="address"></span></p>
+        <p>Kontak: <span id="Telephone"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <p>Deskripsi Pengguna: <span id="instruction"></span></p>
+    </fieldset>
+
+    <fieldset>
+        <legend><strong>Riwayat Jumlah Barang</strong></legend>
+        <p>Logam: <span id="Logam (Metals)"></span>, <span id="quantity Logam (Metals)"></span></p>
+        <p>Keramik: <span id="Keramik (Ceramics)"></span>, <span id="quantity Keramik (Ceramics)"></span></p>
+        <p>Polimer: <span id="Polimer (Polymers)"></span>, <span id="quantity Polimer (Polymers)"></span></p>
+        <p>Komposit: <span id="Komposit (Composites)"></span>, <span id="quantity Komposit (Composites)"></span></p>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Riwayat Pembayaran</strong></legend>
+        <p>Jenis Pengiriman: <span id="Opsi Jasa Pengiriman"></span></p>
+        <p>Metode Pembayaran: <span id="Metode Pembayaran"></span></p>
+    </fieldset>
+
+    <script>
+        var data = new URLSearchParams(location.search);
+        document.querySelectorAll("span").forEach(function (s) {
+            s.textContent = data.get(s.id);
+        });
+
+        var foto = sessionStorage.getItem("foto");
+        if (foto) document.getElementById("foto").src = foto;
+    </script>
+</body>
+</html>
+<footer style="text-align: center; padding: 5px; background-color: #0b2447; color: white;">
+    © 2026 - Nicky Arinto - NIM : 0110226049
+</footer>
